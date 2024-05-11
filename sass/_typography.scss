@@ -1,0 +1,16 @@
+.heading-primary {
+  @extend %style-heading;
+  font-size: $ft-size-60;
+  color: $clr-white;
+}
+
+.heading-secondary {
+  @extend %style-heading;
+  font-size: $ft-size-60;
+}
+
+.heading-tertiary {
+  @extend %style-heading;
+  font-size: $ft-size-27;
+  color: $clr-neutral--1;
+}

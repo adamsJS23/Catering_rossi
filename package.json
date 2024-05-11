@@ -1,0 +1,30 @@
+{
+  "name": "catering-rossi",
+  "version": "1.0.0",
+  "description": "A landing page for catering company",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass ",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass css/main.scss css/style.comp.css ",
+    "prefix:css": "postcss-cli --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "built:css": "npm-run-all compile:sass prefix:sass compress:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamsJS23/Catering_rossi.git"
+  },
+  "author": "Guebre Adama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsJS23/Catering_rossi/issues"
+  },
+  "homepage": "https://github.com/adamsJS23/Catering_rossi#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0"
+  }
+}

@@ -1,0 +1,44 @@
+.heading-primary, .heading-secondary, .heading-tertiary {
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 700; }
+
+.clr-primary-second {
+  color: #DD4E11; }
+
+.clr-white {
+  color: #FFFFFF; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato',sans-serif;
+  line-height: 1.6;
+  color: #212121;
+  background-color: #f7f7; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  width: 90%;
+  max-width: 1128px; }
+
+.heading-primary {
+  font-size: 6rem;
+  color: #FFFFFF; }
+
+.heading-secondary {
+  font-size: 6rem; }
+
+.heading-tertiary {
+  font-size: 2.7rem;
+  color: #212121; }
