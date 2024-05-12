@@ -1,0 +1,38 @@
+.section-hero {
+  background-image: url("../assets/hero-bg.avif");
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 8rem 0;
+
+  &__logo {
+    margin-bottom: 4rem;
+  }
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &__item {
+  }
+
+  &__link:is(:link, :visited) {
+    text-decoration: none;
+    font-size: $fs-21;
+    font-family: $ff-primary;
+    color: $clr-white;
+  }
+
+  &__link:is(:hover,:active){
+    color: $clr-primary--2;
+  }
+}
