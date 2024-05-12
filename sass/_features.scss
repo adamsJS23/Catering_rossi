@@ -1,0 +1,30 @@
+.section-features {
+  padding: 6rem 0;
+  background-color: $clr-neutral--3;
+  text-align: center;
+}
+
+.feature-sup-text {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  position: relative;
+  display: block;
+  padding-bottom: 4rem;
+}
+
+.feature-sup-text::after {
+  content: "";
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid $clr-neutral--1;
+  transform: translateX(115%);
+}
+
+.feature{
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
