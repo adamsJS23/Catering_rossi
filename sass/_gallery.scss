@@ -1,0 +1,32 @@
+.section-gallery {
+  padding: 6rem 0;
+  text-align: center;
+  background-image: url("../assets/hero-bg.avif");
+  background-size: cover;
+  color: $clr-white;
+}
+
+.gallery-sup-text {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  position: relative;
+  display: block;
+  padding-bottom: 4rem;
+}
+
+.gallery-sup-text::after {
+  content: "";
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid $clr-white;
+  transform: translateX(115%);
+}
+
+.gallery{
+  &__img:not(:last-child){
+    margin-bottom: 2rem;
+  }
+}
