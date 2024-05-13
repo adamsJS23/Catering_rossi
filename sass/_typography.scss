@@ -1,16 +1,25 @@
 .heading-primary {
   @extend %style-heading;
-  font-size: $ft-size-60;
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
   color: $clr-white;
+  margin-bottom: 2rem;
 }
 
 .heading-secondary {
   @extend %style-heading;
-  font-size: $ft-size-60;
+  font-size: 3rem;
+  color: $clr-primary--2;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 .heading-tertiary {
-  @extend %style-heading;
-  font-size: $ft-size-27;
+  font-family: $ff-secondary;
+  font-weight: 700;
+  font-size: 2.2rem;
   color: $clr-neutral--1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
