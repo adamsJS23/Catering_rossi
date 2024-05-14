@@ -1,18 +1,14 @@
 .section-gallery {
-  padding: 6rem 0;
-  text-align: center;
   background-image: url("../assets/hero-bg.avif");
   background-size: cover;
+  padding: 6rem 0;
+  text-align: center;
   color: $clr-white;
 }
 
 .gallery-sup-text {
-  display: block;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-  position: relative;
-  display: block;
-  padding-bottom: 4rem;
+  @extend %style-sup-text--1;
+  @extend %style-sup-text--2;
 }
 
 .gallery-sup-text::after {
