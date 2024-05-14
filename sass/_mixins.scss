@@ -1,5 +1,17 @@
-%style-heading{
+%style-heading {
   font-family: $ff-primary;
   font-weight: 700;
   text-align: center;
+  line-height: $lh-12;
+}
+
+%style-sup-text--1 {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+%style-sup-text--2 {
+  position: relative;
+  padding-bottom: 4rem;
 }
