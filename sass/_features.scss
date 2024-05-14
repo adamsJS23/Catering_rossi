@@ -1,16 +1,12 @@
 .section-features {
-  padding: 6rem 0;
   background-color: $clr-neutral--3;
+  padding: 6rem 0;
   text-align: center;
 }
 
 .feature-sup-text {
-  display: block;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-  position: relative;
-  display: block;
-  padding-bottom: 4rem;
+  @extend %style-sup-text--1;
+  @extend %style-sup-text--2;
 }
 
 .feature-sup-text::after {
