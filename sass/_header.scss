@@ -1,8 +1,8 @@
 .section-hero {
   background-image: url("../assets/hero-bg.avif");
   background-size: cover;
-  height: 100vh;
   padding: 2rem 0;
+  height: 100vh;
   text-align: center;
 }
 
@@ -20,9 +20,6 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-  }
-
-  &__item {
   }
 
   &__link:is(:link, :visited) {
