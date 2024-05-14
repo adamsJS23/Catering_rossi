@@ -1,10 +1,9 @@
 .section-about {
   padding: 6rem 0;
 }
+
 .about-sup-text {
-  display: block;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
+  @extend %style-sup-text--1;
 }
 
 .about {
