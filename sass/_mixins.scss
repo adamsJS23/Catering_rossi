@@ -15,3 +15,35 @@
   position: relative;
   padding-bottom: 4rem;
 }
+
+@mixin for-screen-size($screen-size) {
+  @if ($screen-size==tab-port) {
+    @media only screen and (min-width: 500px) {
+      @content;
+    }
+  }
+
+  @if ($screen-size==tab-land) {
+    @media only screen and (min-width: 850px) {
+      @content;
+    }
+  }
+
+  @if ($screen-size==desktop) {
+    @media only screen and (min-width: 1100px) {
+      @content;
+    }
+  }
+
+  @if ($screen-size==desktop-large) {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($screen-size==bip-desktop){
+    @media only screen and (min-width:1800px){
+      @content;
+    }
+  }
+}
