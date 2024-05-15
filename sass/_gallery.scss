@@ -21,8 +21,21 @@
   transform: translateX(115%);
 }
 
-.gallery{
-  &__img:not(:last-child){
-    margin-bottom: 2rem;
+.gallery {
+
+  @include for-screen-size(tab-land) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
+    justify-content: center;
+    grid-gap: 2rem;
   }
+
+  &__img:not(:last-child) {
+    margin-bottom: 2rem;
+    
+    @include for-screen-size(tab-land){
+      margin-bottom: 0;
+    }
+  }
+
 }
