@@ -19,8 +19,18 @@
   transform: translateX(115%);
 }
 
-.feature{
-  &:not(:last-child){
+.features {
+  @include for-screen-size(tab-land) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
+
+    grid-gap: 4rem;
+    justify-content: center;
+  }
+}
+
+.feature {
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
 }
