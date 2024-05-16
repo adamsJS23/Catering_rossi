@@ -1,33 +1,30 @@
 .heading-primary {
   @extend %style-heading;
-  font-size: $fs-40;
+  font-size: clamp($fs-40, 6.35vw, $fs-80);
   letter-spacing: 2px;
   color: $clr-white;
   margin-bottom: 2rem;
 
   @include for-screen-size(tab-port) {
-    font-size: 5.2rem;
     margin-bottom: 4rem;
   }
 
   @include for-screen-size(tab-land) {
-    font-size: $fs-60;
     margin-bottom: 5rem;
   }
 
   @include for-screen-size(desktop) {
-    font-size: $fs-70;
     margin-bottom: 6rem;
   }
+
   @include for-screen-size(desktop-large) {
-    font-size: $fs-80;
     margin-bottom: 6rem;
   }
 }
 
 .heading-secondary {
   @extend %style-heading;
-  font-size: $fs-30;
+  font-size: clamp($fs-30, 6.35vw, $fs-40);
   color: $clr-primary--2;
   margin-bottom: 2rem;
 }
