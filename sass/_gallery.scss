@@ -23,11 +23,20 @@
 
 .gallery {
 
+  @include for-screen-size(tab-port){
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  @include for-screen-size(tab-land){
+    width: 100%;
+  }
+
   @include for-screen-size(tab-land) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
     justify-content: center;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
   }
 
   &__img:not(:last-child) {
