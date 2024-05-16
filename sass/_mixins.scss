@@ -36,12 +36,12 @@
   }
 
   @if ($screen-size==desktop-large) {
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1285px) {
       @content;
     }
   }
 
-  @if ($screen-size==bip-desktop){
+  @if ($screen-size==big-desktop){
     @media only screen and (min-width:1800px){
       @content;
     }
