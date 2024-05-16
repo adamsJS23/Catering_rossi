@@ -2,7 +2,7 @@
   padding: 6rem 0;
 
   @include for-screen-size(tab-land){
-    padding: 3.5rem 0
+    // padding: 3.5rem 0
   }
 }
 
@@ -19,18 +19,19 @@
   }
 
   &__img {
-    transform: translateY(-7rem);
-    margin-bottom: -4rem;
-
+    transform: translateY(-12rem);
+    margin-bottom: -6rem;
+    
     @include for-screen-size(tab-port) {
-      transform: translateY(-8.5rem);
+      // transform: translateY(-8.5rem);
       display: block;
       width: 100%;
-      margin: 0 auto;
+      margin: 0  auto -6rem;
+      // margin-bottom: -6rem;
     }
 
     @include for-screen-size(tab-land) {
-      transform: translateY(-6rem);
+      transform: translateY(-12rem);
       display: block;
       width: 45%;
       margin: 0;
