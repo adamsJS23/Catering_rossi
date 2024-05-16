@@ -3,15 +3,28 @@
 }
 
 .stories {
+
+  @include for-screen-size(tab-port) {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  @include for-screen-size(tab-land) {
+    width: 100%;
+  }
+  
   @include for-screen-size(tab-land) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
     grid-gap: 3rem;
+    justify-content: center;
   }
 }
 
 .story {
   box-shadow: 0 1rem 2rem rgba($clr-black, 0.25);
+
+  
 
   &:not(:last-child) {
     margin-bottom: 4rem;
@@ -40,7 +53,6 @@
   }
 
   &__caption {
-
     @include for-screen-size(tab-land) {
       // display: block;
       // margin-top: auto;
