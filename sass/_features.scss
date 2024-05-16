@@ -24,8 +24,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
 
-    grid-gap: 4rem;
+    grid-row-gap: 3rem;
+    grid-column-gap: 6rem;
     justify-content: center;
+  }
+
+  @include for-screen-size(desktop) {
+    grid-column-gap: 3.5rem;
   }
 }
 
