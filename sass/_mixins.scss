@@ -42,7 +42,7 @@
   }
 
   @if ($screen-size==big-desktop){
-    @media only screen and (min-width:1800px){
+    @media only screen and (min-width:112.5em){
       @content;
     }
   }
