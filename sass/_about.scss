@@ -1,9 +1,5 @@
 .section-about {
   padding: 6rem 0;
-
-  @include for-screen-size(tab-land){
-    // padding: 3.5rem 0
-  }
 }
 
 .about-sup-text {
@@ -23,11 +19,9 @@
     margin-bottom: -6rem;
     
     @include for-screen-size(tab-port) {
-      // transform: translateY(-8.5rem);
       display: block;
       width: 100%;
       margin: 0  auto -6rem;
-      // margin-bottom: -6rem;
     }
 
     @include for-screen-size(tab-land) {
@@ -51,6 +45,5 @@
   
   @include for-screen-size(tab-land){
     margin-bottom: 2rem;
-
   }
 }
