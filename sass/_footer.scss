@@ -1,5 +1,5 @@
 .footer {
-  padding: 4rem 0;
+  padding: 4em 0;
   background-color: $clr-neutral--1;
   color: $clr-neutral--3;
   text-align: center;
@@ -15,7 +15,7 @@
   }
 
   & .container > *:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
   }
 }
 
