@@ -3,7 +3,6 @@
 }
 
 .stories {
-
   @include for-screen-size(tab-port) {
     width: 70%;
     margin: 0 auto;
@@ -12,7 +11,7 @@
   @include for-screen-size(tab-land) {
     width: 100%;
   }
-  
+
   @include for-screen-size(tab-land) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
@@ -23,8 +22,11 @@
 
 .story {
   box-shadow: 0 1rem 2rem rgba($clr-black, 0.25);
-
-  
+  @include for-screen-size(tab-land) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: 4rem;
@@ -39,29 +41,22 @@
     width: 100%;
   }
 
-  &__content {
-    padding: 2rem;
-
-    @include for-screen-size(tab-land) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
   &__text {
+    padding: 2rem 2rem 0 ;
     margin-bottom: 2rem;
   }
-
-  &__caption {
-    @include for-screen-size(tab-land) {
-      // display: block;
-      // margin-top: auto;
-    }
-  }
-
+  
   &__caption > * {
     display: block;
     text-align: center;
+  }
+  
+  &__caption {
+    padding: 0 2rem 2rem  ;
+
+    @include for-screen-size(tab-land) {
+      margin-top: auto;
+    }
   }
 
   &__caption-name {
