@@ -7,9 +7,15 @@
 }
 
 .header {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  @include for-screen-size($bp-tab-port){
+    margin-bottom: 2rem;
+  }
   &__logo {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    @include for-screen-size($bp-tab-port){
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -35,16 +41,14 @@
 }
 
 .hero__btn-wrapper > * {
-  display: block;
+  display: inline-block;
 
-  @include for-screen-size(tab-port) {
+  @include for-screen-size($bp-tab-port) {
     display: inline;
-    background-color: red;
   }
 }
 
 .btn {
-  padding: 1em 4em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -52,15 +56,22 @@
 .btn--primary {
   background-color: $clr-primary--1;
   color: $clr-neutral--1;
-  margin-bottom: 2em;
+  margin-bottom: 0.6em;
+  padding: 1em 4em;
+
+  @include for-screen-size($bp-tab-port){
+    padding: 1em 3em;
+  }
 }
 
 .btn--secondary {
   background-color: transparent;
   color: $clr-white;
   box-shadow: inset 0 0 0 2px $clr-white;
+  padding: 1em 4.55em;
 
-  @include for-screen-size(tab-port){
-    margin-left: 4em;
+  @include for-screen-size($bp-tab-port) {
+    padding: 1em 3em;
+    margin-left: .5em;
   }
 }
