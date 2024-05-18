@@ -1,37 +1,36 @@
 .section-story {
-  padding: 6rem 0;
+  padding: 6em 0;
 }
 
 .stories {
-  @include for-screen-size(tab-port) {
+  @include for-screen-size($bp-tab-port) {
     width: 70%;
     margin: 0 auto;
   }
 
-  @include for-screen-size(tab-land) {
+  @include for-screen-size($bp-tab-land) {
     width: 100%;
   }
 
-  @include for-screen-size(tab-land) {
+  @include for-screen-size($bp-tab-land) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(18.5em, min-content));
     justify-content: center;
+    grid-gap: 1.8em;
   }
 }
 
 .story {
-  box-shadow: 0 1rem 2rem rgba($clr-black, 0.25);
-  @include for-screen-size(tab-land) {
+  box-shadow: 0 1em 2em rgba($clr-black, 0.25);
+  @include for-screen-size($bp-tab-land) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
 
   &:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom: 1.8em;
 
-    @include for-screen-size(tab-land) {
+    @include for-screen-size($bp-tab-land) {
       margin-bottom: 0;
     }
   }
@@ -42,19 +41,19 @@
   }
 
   &__text {
-    padding: 2rem 2rem 0 ;
-    margin-bottom: 2rem;
+    padding: 1em 1em 0;
+    margin-bottom: 1em;
   }
-  
+
   &__caption > * {
     display: block;
     text-align: center;
   }
-  
-  &__caption {
-    padding: 0 2rem 2rem  ;
 
-    @include for-screen-size(tab-land) {
+  &__caption {
+    padding: 0 2em 2em;
+
+    @include for-screen-size($bp-tab-land) {
       margin-top: auto;
     }
   }
