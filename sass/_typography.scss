@@ -1,24 +1,24 @@
 .heading-primary {
   @extend %style-heading;
-  font-size: clamp($fs-40, 6.35vw, $fs-80);
+  font-size: clamp($fs-355, 6.35vw, $fs-80);
   letter-spacing: 2px;
   color: $clr-white;
-  margin-bottom: 2rem;
+  margin-bottom: 0.7em;
 
-  @include for-screen-size(tab-port) {
-    margin-bottom: 4rem;
+  @include for-screen-size($bp-tab-port) {
+    margin-bottom: 1.8em;
   }
 
-  @include for-screen-size(tab-land) {
-    margin-bottom: 5rem;
+  @include for-screen-size($bp-tab-land) {
+    margin-bottom: 1em;
   }
 
-  @include for-screen-size(desktop) {
-    margin-bottom: 6rem;
+  @include for-screen-size($bp-desktop) {
+    margin-bottom: 1em;
   }
 
-  @include for-screen-size(desktop-large) {
-    margin-bottom: 6rem;
+  @include for-screen-size($bp-medium-desktop) {
+    margin-bottom: 0.7em;
   }
 }
 
@@ -26,7 +26,7 @@
   @extend %style-heading;
   font-size: clamp($fs-30, 6.35vw, $fs-40);
   color: $clr-primary--2;
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
 }
 
 .heading-tertiary {
@@ -35,5 +35,5 @@
   font-size: $fs-22;
   color: $clr-neutral--1;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
