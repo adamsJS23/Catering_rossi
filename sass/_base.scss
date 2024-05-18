@@ -10,7 +10,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @include for-screen-size(big-desktop){
+  @include for-screen-size($bp-big-desktop){
     font-size: 70%;
   }
 }
@@ -31,7 +31,7 @@ img {
   max-width: 1128px;
   margin: 0 auto;
   
-  @include for-screen-size(big-desktop){
-    max-width: 1428px;
+  @include for-screen-size($bp-big-desktop){
+    max-width: 1528px;
   }
 }
