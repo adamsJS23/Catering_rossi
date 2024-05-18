@@ -1,7 +1,7 @@
 .section-gallery {
   background-image: url("../assets/hero-bg.avif");
   background-size: cover;
-  padding: 6rem 0;
+  padding: 6em 0;
   text-align: center;
   color: $clr-white;
 }
@@ -23,26 +23,26 @@
 
 .gallery {
 
-  @include for-screen-size(tab-port){
+  @include for-screen-size($bp-tab-port){
     width: 70%;
     margin: 0 auto;
   }
 
-  @include for-screen-size(tab-land){
+  @include for-screen-size($bp-tab-land){
     width: 100%;
   }
 
-  @include for-screen-size(tab-land) {
+  @include for-screen-size($bp-tab-land) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(18.5em, min-content));
     justify-content: center;
-    grid-gap: 3rem;
+    grid-gap: 1.8em;
   }
 
   &__img:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8em;
     
-    @include for-screen-size(tab-land){
+    @include for-screen-size($bp-tab-land){
       margin-bottom: 0;
     }
   }
