@@ -1,5 +1,5 @@
 .section-about {
-  padding: 6rem 0;
+  padding: 6em 0;
 }
 
 .about-sup-text {
@@ -8,24 +8,24 @@
 
 .about {
   &__content {
-    @include for-screen-size(tab-land) {
+    @include for-screen-size($bp-tab-land) {
       display: flex;
       justify-content: space-between;
     }
   }
 
   &__img {
-    transform: translateY(-12rem);
-    margin-bottom: -6rem;
+    transform: translateY(-8em);
+    margin-bottom: -6em;
     
-    @include for-screen-size(tab-port) {
+    @include for-screen-size($bp-tab-port) {
       display: block;
       width: 100%;
-      margin: 0  auto -6rem;
+      margin: 0  auto -5em;
     }
 
-    @include for-screen-size(tab-land) {
-      transform: translateY(-12rem);
+    @include for-screen-size($bp-tab-land) {
+      transform: translateY(-8em);
       display: block;
       width: 45%;
       margin: 0;
@@ -34,16 +34,16 @@
   }
 
   &__text {
-    @include for-screen-size(tab-land) {
+    @include for-screen-size($bp-tab-land) {
       width: 50%;
     }
   }
 }
 
 .about__text .about__paragraph:nth-of-type(1) {
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
   
-  @include for-screen-size(tab-land){
-    margin-bottom: 2rem;
+  @include for-screen-size($bp-tab-land){
+    margin-bottom: 2em;
   }
 }
