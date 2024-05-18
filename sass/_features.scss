@@ -1,6 +1,6 @@
 .section-features {
   background-color: $clr-neutral--3;
-  padding: 6rem 0;
+  padding: 6em 0;
   text-align: center;
 }
 
@@ -20,22 +20,37 @@
 }
 
 .features {
-  @include for-screen-size(tab-land) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
+  @include for-screen-size($bp-tab-port) {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-    grid-row-gap: 3rem;
-    grid-column-gap: 6rem;
+  @include for-screen-size($bp-tab-land) {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14em, min-content));
+    grid-gap: 2em;
     justify-content: center;
   }
 
-  @include for-screen-size(desktop) {
-    grid-column-gap: 3.5rem;
+  @include for-screen-size($bp-desktop) {
+    // grid-column-gap: 3.5em;
   }
 }
 
 .feature {
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 3.2em;
+
+    @include for-screen-size($bp-tab-land) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-screen-size($bp-tab-land){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
